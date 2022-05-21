@@ -1,0 +1,68 @@
+.Component {
+  background-color: white;
+  height: 100vh;
+}
+
+.Component__holder {
+  padding-top: 15rem;
+  background-color: white;
+}
+
+#BarChart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /* Arrange the Bars Horizontally using FlexBox  */
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  /* Have the bars start at the bottom and go up */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Center the bars in the middle of the screen */
+  margin: 0 5rem;
+}
+
+.bar {
+  background-color: #3aa70f;
+  /* Have each bar be a nice green */
+  width: 10px;
+  /* The animation will start with each bar being 10px wide, and then expand outwards */
+}
+
+.btn {
+  content: "Shuffle";
+  border: none;
+  border-radius: .5rem;
+  background-color: #08aafe;
+  color: #fff;
+  height: 5rem;
+  width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10rem auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn:hover {
+  background-color: #aadffb;
+  color: #7a7a7a;
+}
+/*# sourceMappingURL=Component.css.map */

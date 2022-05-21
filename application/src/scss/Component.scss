@@ -1,0 +1,59 @@
+@import 'variables';
+
+@mixin buttons {
+    // margin-top: 2.2rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: $btnColor;
+    color: $btnTextColor;
+    height: $btnheight;
+    width: $btnwidth;
+}
+
+@mixin buttonHover {
+    background-color: $btnClickColor;
+    color: $btnClickTextColor;
+}
+
+.Component{
+    background-color: white;
+    height: 100vh;
+    
+    &__holder{
+        padding-top: 15rem;
+        background-color: white;
+    }
+
+    
+    
+    
+}
+
+#BarChart { 
+    display: flex; 
+    flex-direction: row; /* Arrange the Bars Horizontally using FlexBox  */
+    align-items: flex-end; /* Have the bars start at the bottom and go up */
+    justify-content: center; /* Center the bars in the middle of the screen */
+    margin: 0 5rem ;
+  }
+  
+  .bar {
+    background-color: #3aa70f; /* Have each bar be a nice green */
+    width: 10px; /* The animation will start with each bar being 10px wide, and then expand outwards */
+  }
+
+.btn{
+    content: "Shuffle";
+    @include buttons;
+    display: flex;
+    flex-direction: column;
+    margin: 10rem auto;
+    transition: 0.5s ;
+    align-items: center;
+    justify-content: center;
+    
+    &:hover{
+        @include buttonHover;
+        
+    }
+}
